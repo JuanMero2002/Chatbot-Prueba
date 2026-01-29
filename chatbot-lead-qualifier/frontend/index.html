@@ -1,9 +1,226 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Chatbot Widget</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparks IoT&Energy - Energías Renovables</title>
+    <link rel="stylesheet" href="css/chatbot-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css">
 </head>
 <body>
-    <h1>Chatbot Lead Qualifier</h1>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-bolt"></i>
+                <h1>Sparks IoT&Energy</h1>
+            </div>
+            <nav class="nav">
+                <a href="#demo" class="nav-link">Demo</a>
+                <a href="#features" class="nav-link">Características</a>
+                <a href="#api" class="nav-link">API</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Energías Renovables</h2>
+                <p class="hero-subtitle">Por un mejor futuro para nuestro planeta. Consume tu energía verde, tu energía limpia e inagotable</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-solar-panel"></i>
+                        <div>
+                            <strong>Solar</strong>
+                            <span>Fotovoltaica</span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-leaf"></i>
+                        <div>
+                            <strong>Verde</strong>
+                            <span>Sostenible</span>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Manta</strong>
+                            <span>Manabí, Ecuador</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Demo Section -->
+            <section id="demo" class="demo-section">
+                <h2 class="section-title">Habla con Nuestro Asistente Virtual</h2>
+                <p class="section-subtitle">Nuestro bot te ayudará a encontrar la solución energética perfecta para ti</p>
+                
+                <div class="demo-container">
+                    <div class="demo-info">
+                        <h3>¿Necesitas optimizar tu consumo o automatizar tus procesos?</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Consulta sobre nuestros servicios 24/7</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Obtén información detallada instantáneamente</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Agenda asesoría técnica gratuita</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <span>Conexión directa con especialistas por WhatsApp</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="status-indicator">
+                            <div class="status-dot"></div>
+                            <span>Equipo técnico disponible para asesorarte</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section id="features" class="features-section">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3>Solar Fotovoltaica Aislada</h3>
+                        <p>Sistemas autónomos sin conexión a red con baterías. Ideal para zonas rurales o remotas.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <h3>Solar Conectada a Red</h3>
+                        <p>Genera tu propia energía e inyecta excedentes. Reduce tu factura hasta balance cero.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3>Bombeo Solar</h3>
+                        <p>Sistemas de riego y bombeo optimizados con variadores de frecuencia.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Iluminación Solar</h3>
+                        <p>Tecnología LED con sensores para espacios públicos y privados.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Eficiencia Energética</h3>
+                        <p>Auditorías y optimización de consumo para reducir costos operativos.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Industria 4.0</h3>
+                        <p>Automatización de procesos con IoT y tecnologías inteligentes.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Chatbot Widget (Fixed) -->
+    <div id="chatbot-widget" class="chatbot-widget closed">
+        <div class="chatbot-header">
+            <div class="chatbot-header-content">
+                <div class="chatbot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chatbot-info">
+                    <h3>Asistente Virtual</h3>
+                    <span class="chatbot-status">En línea</span>
+                </div>
+            </div>
+            <button class="chatbot-close" id="chatbot-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>¡Hola! 🌱 Soy el asistente virtual de Sparks IoT&Energy.
+
+Estoy aquí para ayudarte con información sobre nuestros servicios de energías renovables.
+
+¿En qué puedo ayudarte hoy?</p>
+                    <span class="message-time">Ahora</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chatbot-typing" id="chatbot-typing" style="display: none;">
+            <div class="typing-indicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <div class="chatbot-input">
+            <input 
+                type="text" 
+                id="chatbot-input-field" 
+                placeholder="Escribe tu mensaje..."
+                autocomplete="off"
+            >
+            <button class="chatbot-send" id="chatbot-send">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chatbot Toggle Button -->
+    <button class="chatbot-toggle" id="chatbot-toggle">
+        <i class="fas fa-comments"></i>
+        <span class="chatbot-badge" id="chatbot-badge">1</span>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sparks IoT&Energy - Energías Renovables en Manta, Manabí, Ecuador</p>
+            <div class="footer-links">
+                <a href="#">Términos</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/api-client.js"></script>
+    <script src="js/chatbot-widget.js"></script>
 </body>
 </html>
