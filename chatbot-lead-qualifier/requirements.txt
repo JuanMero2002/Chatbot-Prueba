@@ -1,0 +1,41 @@
+# ============================================
+# DEPENDENCIAS MÍNIMAS PARA COMENZAR
+# Instalación rápida y ligera
+# ============================================
+
+# Framework Web
+Flask==3.0.0
+Flask-CORS==4.0.0
+Flask-Limiter==3.5.0
+
+# Base de Datos
+SQLAlchemy==2.0.25
+pymysql==1.1.0
+alembic==1.13.1
+
+# NLP Básico (ligero)
+nltk==3.8.1
+
+# Machine Learning
+scikit-learn==1.4.0
+pandas==2.2.0
+numpy==1.26.3
+joblib==1.3.2
+
+# Validaciones
+email-validator==2.1.0
+phonenumbers==8.13.27
+
+# Utilidades
+python-dotenv==1.0.0
+requests==2.31.0
+python-dateutil==2.8.2
+
+# Seguridad
+PyJWT==2.8.0
+
+# Servidor
+gunicorn==21.2.0
+
+# Testing básico
+pytest==7.4.4

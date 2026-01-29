@@ -1,0 +1,2 @@
+-- SQL para inicializar la base de datos
+-- Schema del Chatbot de Calificación de Leads

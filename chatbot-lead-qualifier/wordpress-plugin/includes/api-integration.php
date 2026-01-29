@@ -1,0 +1,3 @@
+<?php
+// WordPress API Integration
+?>

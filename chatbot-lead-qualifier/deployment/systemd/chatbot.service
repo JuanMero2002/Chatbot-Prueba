@@ -1,0 +1,13 @@
+[Unit]
+Description=Chatbot Lead Qualifier Service
+After=network.target
+
+[Service]
+Type=notify
+User=chatbot
+WorkingDirectory=/var/www/chatbot-lead-qualifier
+ExecStart=/var/www/chatbot-lead-qualifier/venv/bin/python run.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
