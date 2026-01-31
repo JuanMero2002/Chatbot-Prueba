@@ -15,7 +15,7 @@
     "posicionamiento": "Aliado Tecnológico de nuestros clientes"
   },
   "contacto": {
-    "whatsapp": ["+593 982840675", "+593 962018222", "+593 989831819"],
+    "whatsapp": ["+593 982840675"],
     "correo": "info@sparksenergy.io",
     "horario": "Lunes a Sábado, 08:00 AM – 08:00 PM",
     "horario_detalles": {
@@ -227,7 +227,7 @@
     "bienvenida": "Hola, bienvenido a Sparks IoT & Energy. Somos especialistas en soluciones tecnológicas para ciudades inteligentes, energía solar renovable e industria 4.0. ¿En qué podemos ayudarte hoy?",
     "informacion_general": "Sparks IoT & Energy es tu aliado tecnológico en soluciones de energía renovable, eficiencia energética e industria inteligente. Con sede en Manta, Ecuador, contamos con una trayectoria sólida en proyectos residenciales, comerciales, industriales y públicos.",
     "servicios": "Ofrecemos 6 líneas principales: 1) Solar Off-Grid (aislada), 2) Solar On-Grid (conectada a red), 3) Bombeo solar, 4) Iluminación solar, 5) Eficiencia energética, 6) Industria 4.0.",
-    "contacto": "Puedes contactarnos por: WhatsApp: +593 982840675 / +593 962018222 / +593 989831819 | Correo: info@sparksenergy.io | Horario: Lunes a Sábado, 08:00 AM – 08:00 PM"
+    "contacto": "Puedes contactarnos por: WhatsApp: +593 982840675 | Correo: info@sparksenergy.io | Horario: Lunes a Sábado, 08:00 AM – 08:00 PM"
   },
   "reglas_respuesta": {
     "regla_alucinacion": "CRÍTICA: Si preguntan por una marca específica de inversor (ej. Fronius, Victron) y NO está en la lista verificada [JinkoSolar, SIEMENS, INVT, GROOWATT], responder: 'Trabajamos con marcas líderes del mercado probadas en proyectos como JinkoSolar, SIEMENS, INVT Y GROOWATT. Para detalles específicos de la ficha técnica de tu proyecto, por favor consulta con nuestros ingenieros en WhatsApp.'",

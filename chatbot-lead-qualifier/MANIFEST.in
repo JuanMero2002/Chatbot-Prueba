@@ -1,0 +1,29 @@
+# MANIFEST.in - Archivos adicionales para incluir en el paquete
+
+# Documentación
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CONTRIBUTING.md
+
+# Configuración
+include .env.example
+include requirements.txt
+include pytest.ini
+
+# Base de conocimientos
+recursive-include app/chatbot *.json
+
+# Frontend
+recursive-include frontend *.html *.css *.js
+
+# Configuraciones de despliegue
+recursive-include deployment *.conf *.wsgi *.service
+
+# Excluir archivos innecesarios
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.log
+global-exclude __pycache__
+global-exclude .DS_Store
+global-exclude *.swp
