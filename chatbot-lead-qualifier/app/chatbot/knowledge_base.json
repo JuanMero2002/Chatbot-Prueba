@@ -1,0 +1,231 @@
+{
+  "empresa": {
+    "nombre": "Sparks IoT & Energy",
+    "nombre_oficial": "Sparks IoT & Energy",
+    "descripcion": "Soluciones tecnológicas innovadoras para ciudades inteligentes y sostenibles. Especialistas en energía solar, IoT e industria 4.0.",
+    "ubicacion_principal": {
+      "nombre": "Edificio Manta Business Center, Torre B, Piso 3, Oficina 301",
+      "avenida": "Av. Malecón (Frente al Mall del Pacífico)",
+      "ciudad": "Manta",
+      "provincia": "Manabí",
+      "pais": "Ecuador"
+    },
+    "mision": "Consolidarse como referente en soluciones tecnológicas para ciudades inteligentes y sostenibles. Promover la autosuficiencia energética y reducir la huella de carbono mediante energías renovables e IoT.",
+    "vision": "Liderar la transición energética en Ecuador, siendo aliados estratégicos del sector público y privado para optimizar recursos y reducir emisiones.",
+    "posicionamiento": "Aliado Tecnológico de nuestros clientes"
+  },
+  "contacto": {
+    "whatsapp": ["+593 982840675", "+593 962018222", "+593 989831819"],
+    "correo": "info@sparksenergy.io",
+    "horario": "Lunes a Sábado, 08:00 AM – 08:00 PM",
+    "horario_detalles": {
+      "inicio": "08:00 AM",
+      "cierre": "08:00 PM",
+      "dias": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
+    }
+  },
+  "equipo": {
+    "colaboradores": [
+      {
+        "nombre": "Milton Moreano",
+        "rol": "Colaborador",
+        "especialidad": "Área Electricidad & Eficiencia"
+      },
+      {
+        "nombre": "Aleph Acebo",
+        "rol": "Colaborador"
+      }
+    ]
+  },
+  "tecnologia": {
+    "energia_solar": {
+      "descripcion": "Sistemas fotovoltaicos de alta eficiencia",
+      "componentes": {
+        "paneles": "Paneles Monocristalinos (Mayor eficiencia)",
+        "inversores": ["On-Grid", "Off-Grid", "Híbridos"],
+        "almacenamiento": [
+          {
+            "tipo": "Baterías de Litio",
+            "uso": "Larga duración y máxima eficiencia"
+          },
+          {
+            "tipo": "Baterías GEL",
+            "uso": "Aplicaciones más sencillas y entornos rurales"
+          }
+        ]
+      }
+    },
+    "industria_40": {
+      "descripcion": "Automatización e integración inteligente de procesos",
+      "componentes": ["Sistemas PLC y SCADA", "Variadores de frecuencia", "Optimización de bombeo y motores"]
+    },
+    "iot": {
+      "descripcion": "Internet de las Cosas para monitoreo y control",
+      "productos_propios": [
+        {
+          "nombre": "Estación Sparks-AQ1",
+          "descripcion": "Monitoreo automático de calidad del aire y parámetros ambientales",
+          "tipo": "Producto Propio"
+        }
+      ]
+    }
+  },
+  "proyectos_realizados": {
+    "residencial": [
+      {
+        "nombre": "Urbanización Barú",
+        "ubicacion": "Manta",
+        "tipo": "Sistema On-Grid",
+        "capacidad": "5 kW",
+        "descripcion": "Instalación solar residencial conectada a red para reducir costos de energía"
+      },
+      {
+        "nombre": "Ciudad del Mar",
+        "ubicacion": "Manta",
+        "sistemas": [
+          {
+            "tipo": "Sistema On-Grid",
+            "capacidad": "10 kW"
+          },
+          {
+            "tipo": "Sistema Híbrido",
+            "capacidad": "5 kW",
+            "caracteristicas": "Con respaldo de baterías"
+          }
+        ],
+        "descripcion": "Múltiples sistemas para máxima eficiencia energética"
+      }
+    ],
+    "comercial": [
+      {
+        "nombre": "Motel Intimus",
+        "ubicacion": "Jipijapa",
+        "tipo": "Sistema Solar",
+        "capacidad": "22 kW",
+        "detalles": "40 paneles para reducir facturación",
+        "descripcion": "Solución comercial que reduce significativamente los costos operativos"
+      },
+      {
+        "nombre": "Multiservicios Julio",
+        "ubicacion": "Manta",
+        "tipo": "Ampliación de Sistema",
+        "capacidad": "15 kW",
+        "descripcion": "Expansión de instalación solar para mayor capacidad"
+      }
+    ],
+    "publico_comunitario": [
+      {
+        "nombre": "EPAM Manta",
+        "tipo": "Infraestructura Fotovoltaica",
+        "detalles": "8 puntos estratégicos",
+        "impacto": "Sector público",
+        "descripcion": "Proyecto de energía renovable para empresa pública de agua"
+      },
+      {
+        "nombre": "Comuna Liguiqui",
+        "sistemas": [
+          {
+            "tipo": "Sistema de Bombeo Solar",
+            "alcance": "Abastece agua a 700m de distancia",
+            "ventaja": "Sin necesidad de diésel",
+            "impacto_beneficiarios": "Comunidad completa"
+          },
+          {
+            "tipo": "Sistema Off-Grid",
+            "uso": "Videovigilancia y seguridad",
+            "energia": "100% renovable"
+          }
+        ],
+        "descripcion": "Solución integral para comunidad rural con impacto sostenible"
+      }
+    ]
+  },
+  "certificaciones_estandares": {
+    "iso_50001": {
+      "nombre": "Norma ISO 50001",
+      "descripcion": "Gestión de la Energía",
+      "cumplimiento": "No solo la cumplen, sino que ofrecen el servicio de consultoría e implementación",
+      "beneficiarios": "Industrias y empresas que deseen certificar su eficiencia energética y gestión de activos",
+      "servicio": "Consultoría e implementación de ISO 50001"
+    },
+    "normativas_locales": {
+      "nombre": "Regulación ARCONEL",
+      "descripcion": "Cumplimiento de normativas locales para conexión a red",
+      "aplicacion": "Sistemas On-Grid"
+    },
+    "calidad": {
+      "descripcion": "Enfoque riguroso de calidad en todos los proyectos",
+      "certificaciones": ["Cumplimiento de normativas locales", "Estándares internacionales"]
+    }
+  },
+  "proveedores_marcas": {
+    "descripcion": "Trabajamos con marcas líderes en tecnología solar y automatización",
+    "marcas_verificadas": ["JinkoSolar", "SIEMENS", "INVT", "GROOWATT"],
+    "garantia": "Equipos de primera calidad y garantía completa",
+    "regla_alucinacion": "Si preguntan por una marca específica de inversor NO en esta lista, responder que trabajamos con marcas líderes del mercado probadas en proyectos. Para detalles específicos de ficha técnica, consultar con nuestros ingenieros en WhatsApp."
+  },
+  "servicios": {
+    "solar_aislada": {
+      "id": "solar_aislada",
+      "nombre": "Solar Fotovoltaica o Híbrida Aislada (Off-grid)",
+      "descripcion": "Instalación solar que genera energía sin conexión a red. Ideal para zonas rurales con autonomía completa mediante baterías.",
+      "tipos": ["Off-Grid", "Híbrida"],
+      "audiencia": "Zonas rurales, lugares remotos, aplicaciones autónomas",
+      "ventajas": ["Autonomía completa", "Sin depender de red eléctrica", "Almacenamiento con baterías", "Ideal para zonas aisladas"],
+      "keywords": ["aislada", "off-grid", "sin red", "autonoma", "bateria", "rural", "remota"]
+    },
+    "solar_red": {
+      "id": "solar_red",
+      "nombre": "Solar Fotovoltaica Conectada a Red (On-Grid)",
+      "descripcion": "Sistema conectado a red que permite generar tu propia energía e inyectar excedentes. Reduce tu factura eléctrica hasta alcanzar balance cero.",
+      "tipos": ["On-Grid", "Conectada a Red"],
+      "audiencia": "Residencial, comercial, industrial con acceso a red pública",
+      "ventajas": ["Reducción de factura eléctrica", "Inyección de excedentes", "Balance cero posible", "Sin baterías (menor costo)", "Retorno de inversión"],
+      "keywords": ["conectada", "on-grid", "red", "factura", "ahorro", "excedente", "conexion"]
+    },
+    "bombeo_solar": {
+      "id": "bombeo",
+      "nombre": "Sistemas de Bombeo Solar",
+      "descripcion": "Bombeo o riego fotovoltaico que reduce costos de electricidad. Optimizado con variadores de frecuencia para máximo rendimiento.",
+      "audiencia": "Agricultura, ganadería, suministro de agua, riego",
+      "ventajas": ["Reduce costos de electricidad", "Optimizado con variadores de frecuencia", "Máximo rendimiento", "Ideal para bombeo de agua", "Solución sostenible para agricultura"],
+      "keywords": ["bombeo", "riego", "agua", "agricultura", "pozo", "variador"]
+    },
+    "iluminacion_solar": {
+      "id": "iluminacion",
+      "nombre": "Sistemas de Iluminación Solar",
+      "descripcion": "Iluminación LED solar para espacios públicos y privados. Ideal para parques, calles, emergencias con sensores de presencia.",
+      "audiencia": "Espacios públicos, calles, parques, emergencias, privados",
+      "ventajas": ["LED de bajo consumo", "Sensores de presencia", "Cero costo operativo", "Ideal para áreas rurales", "Fácil instalación"],
+      "keywords": ["iluminacion", "luz", "led", "calle", "parque", "emergencia", "sensores"]
+    },
+    "eficiencia_energetica": {
+      "id": "eficiencia",
+      "nombre": "Eficiencia Energética",
+      "descripcion": "Optimización de tu consumo energético mediante auditorías y soluciones personalizadas para reducir costos.",
+      "audiencia": "Empresas, industrias, comercios, residencial",
+      "ventajas": ["Auditoría energética completa", "Soluciones personalizadas", "Reducción de costos", "Consultoría ISO 50001", "Optimización de procesos"],
+      "keywords": ["eficiencia", "optimizar", "consumo", "auditoria", "reducir", "iso", "gestion"]
+    },
+    "industria_40": {
+      "id": "industria",
+      "nombre": "Industria 4.0 y Automatización",
+      "descripcion": "Automatización de procesos industriales con IoT y tecnologías inteligentes para mayor eficiencia y productividad.",
+      "audiencia": "Industrias, fábricas, plantas de producción",
+      "ventajas": ["Automatización de procesos", "Control en tiempo real", "Reducción de errores", "Mayor productividad", "Monitoreo remoto"],
+      "keywords": ["industria", "automatizacion", "iot", "procesos", "4.0", "plc", "scada"]
+    }
+  },
+  "respuestas_frecuentes": {
+    "bienvenida": "Hola, bienvenido a Sparks IoT & Energy. Somos especialistas en soluciones tecnológicas para ciudades inteligentes, energía solar renovable e industria 4.0. ¿En qué podemos ayudarte hoy?",
+    "informacion_general": "Sparks IoT & Energy es tu aliado tecnológico en soluciones de energía renovable, eficiencia energética e industria inteligente. Con sede en Manta, Ecuador, contamos con una trayectoria sólida en proyectos residenciales, comerciales, industriales y públicos.",
+    "servicios": "Ofrecemos 6 líneas principales: 1) Solar Off-Grid (aislada), 2) Solar On-Grid (conectada a red), 3) Bombeo solar, 4) Iluminación solar, 5) Eficiencia energética, 6) Industria 4.0.",
+    "contacto": "Puedes contactarnos por: WhatsApp: +593 982840675 / +593 962018222 / +593 989831819 | Correo: info@sparksenergy.io | Horario: Lunes a Sábado, 08:00 AM – 08:00 PM"
+  },
+  "reglas_respuesta": {
+    "regla_alucinacion": "CRÍTICA: Si preguntan por una marca específica de inversor (ej. Fronius, Victron) y NO está en la lista verificada [JinkoSolar, SIEMENS, INVT, GROOWATT], responder: 'Trabajamos con marcas líderes del mercado probadas en proyectos como JinkoSolar, SIEMENS, INVT Y GROOWATT. Para detalles específicos de la ficha técnica de tu proyecto, por favor consulta con nuestros ingenieros en WhatsApp.'",
+    "regla_desconocido": "Si no sabes la respuesta a una pregunta específica, siempre ofrece contacto directo con el equipo técnico por WhatsApp.",
+    "regla_generosidad": "Proporciona información valiosa y ejemplos de proyectos reales para generar confianza. Cita casos de éxito de la cartera.",
+    "regla_personalización": "Detecta el tipo de cliente (residencial, comercial, industrial, público) y ofrece soluciones alineadas a su perfil."
+  }
+}
