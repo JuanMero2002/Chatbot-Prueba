@@ -1,0 +1,377 @@
+/**
+ * Estilos del Chatbot Sparks IoT & Energy para WordPress
+ * Version: 1.0.0
+ */
+
+/* Variables CSS */
+:root {
+    --sparks-chatbot-color: #2563eb;
+    --sparks-chatbot-color-hover: #1d4ed8;
+    --sparks-chatbot-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    --sparks-chatbot-border-radius: 16px;
+}
+
+/* Contenedor principal */
+#sparks-chatbot-container {
+    position: fixed;
+    z-index: 999999;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Posicionamiento */
+.sparks-chatbot-bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.sparks-chatbot-bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+/* Botón flotante */
+.sparks-chatbot-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--sparks-chatbot-color);
+    border: none;
+    cursor: pointer;
+    box-shadow: var(--sparks-chatbot-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.sparks-chatbot-toggle:hover {
+    background: var(--sparks-chatbot-color-hover);
+    transform: scale(1.1);
+}
+
+.sparks-chatbot-toggle svg {
+    width: 30px;
+    height: 30px;
+}
+
+/* Badge de notificación */
+.sparks-chatbot-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #ef4444;
+    color: white;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Ventana del chat */
+.sparks-chatbot-window {
+    position: absolute;
+    bottom: 80px;
+    width: 380px;
+    height: 600px;
+    max-height: calc(100vh - 120px);
+    background: white;
+    border-radius: var(--sparks-chatbot-border-radius);
+    box-shadow: var(--sparks-chatbot-shadow);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header */
+.sparks-chatbot-header {
+    background: var(--sparks-chatbot-color);
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sparks-chatbot-header-info {
+    flex: 1;
+}
+
+.sparks-chatbot-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sparks-chatbot-subtitle {
+    margin: 5px 0 0 0;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.sparks-chatbot-close {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.sparks-chatbot-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.sparks-chatbot-close svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Área de mensajes */
+.sparks-chatbot-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background: #f9fafb;
+    scroll-behavior: smooth;
+}
+
+.sparks-chatbot-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sparks-chatbot-messages::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.sparks-chatbot-messages::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 3px;
+}
+
+.sparks-chatbot-messages::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+/* Mensaje */
+.sparks-chatbot-message {
+    margin-bottom: 16px;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sparks-chatbot-message-content {
+    padding: 12px 16px;
+    border-radius: 12px;
+    max-width: 80%;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+.sparks-chatbot-message-bot .sparks-chatbot-message-content {
+    background: white;
+    color: #1f2937;
+    border: 1px solid #e5e7eb;
+    margin-right: auto;
+}
+
+.sparks-chatbot-message-user .sparks-chatbot-message-content {
+    background: var(--sparks-chatbot-color);
+    color: white;
+    margin-left: auto;
+}
+
+.sparks-chatbot-message-time {
+    font-size: 11px;
+    color: #9ca3af;
+    margin-top: 4px;
+}
+
+.sparks-chatbot-message-bot .sparks-chatbot-message-time {
+    text-align: left;
+}
+
+.sparks-chatbot-message-user .sparks-chatbot-message-time {
+    text-align: right;
+}
+
+/* Botón de WhatsApp */
+.sparks-chatbot-whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #25D366;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 12px;
+    transition: background 0.2s;
+}
+
+.sparks-chatbot-whatsapp-button:hover {
+    background: #20BA5A;
+    color: white;
+}
+
+.sparks-chatbot-whatsapp-button svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Indicador de escritura */
+.sparks-chatbot-typing {
+    padding: 0 20px 10px 20px;
+    display: flex;
+    gap: 4px;
+}
+
+.sparks-chatbot-typing span {
+    width: 8px;
+    height: 8px;
+    background: #9ca3af;
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out;
+}
+
+.sparks-chatbot-typing span:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.sparks-chatbot-typing span:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+    }
+}
+
+/* Contenedor de input */
+.sparks-chatbot-input-container {
+    border-top: 1px solid #e5e7eb;
+    background: white;
+    padding: 16px;
+}
+
+#sparks-chatbot-form {
+    display: flex;
+    gap: 8px;
+}
+
+.sparks-chatbot-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 24px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.sparks-chatbot-input:focus {
+    border-color: var(--sparks-chatbot-color);
+}
+
+.sparks-chatbot-send {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--sparks-chatbot-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
+
+.sparks-chatbot-send:hover {
+    background: var(--sparks-chatbot-color-hover);
+}
+
+.sparks-chatbot-send svg {
+    width: 20px;
+    height: 20px;
+}
+
+.sparks-chatbot-send:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .sparks-chatbot-window {
+        width: calc(100vw - 40px);
+        height: calc(100vh - 100px);
+        bottom: 70px;
+    }
+    
+    .sparks-chatbot-bottom-right,
+    .sparks-chatbot-bottom-left {
+        right: 20px;
+        left: 20px;
+    }
+}
+
+/* Formato de texto en mensajes */
+.sparks-chatbot-message-content {
+    white-space: pre-wrap;
+}
+
+.sparks-chatbot-message-content strong {
+    font-weight: 600;
+}
+
+.sparks-chatbot-message-content a {
+    color: var(--sparks-chatbot-color);
+    text-decoration: underline;
+}
+
+.sparks-chatbot-message-content ul {
+    margin: 8px 0;
+    padding-left: 20px;
+}
+
+.sparks-chatbot-message-content li {
+    margin: 4px 0;
+}
