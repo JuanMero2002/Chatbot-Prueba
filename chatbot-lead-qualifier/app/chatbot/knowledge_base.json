@@ -22,6 +22,13 @@
       "inicio": "08:00 AM",
       "cierre": "08:00 PM",
       "dias": ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
+    },
+    "redes_sociales": {
+      "facebook": "https://facebook.com/sparksenergy",
+      "instagram": "https://instagram.com/sparksenergy",
+      "youtube": "https://youtube.com/@sparksenergy",
+      "linkedin": "https://linkedin.com/company/sparks-iot-energy",
+      "twitter": "https://twitter.com/sparksenergy"
     }
   },
   "equipo": {

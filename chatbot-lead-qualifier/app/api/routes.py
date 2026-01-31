@@ -97,6 +97,10 @@ def detectar_intencion(mensaje):
     if any(word in mensaje for word in ['contacto', 'llamar', 'telefono', 'whatsapp', 'escribir', 'contactarme']):
         return 'contacto'
     
+    # Redes sociales
+    if any(word in mensaje for word in ['redes sociales', 'redes', 'instagram', 'facebook', 'tiktok', 'linkedin', 'youtube', 'twitter', 'siguenos', 'síguenos', 'síganos', 'red social', 'social media', '@sparks', 'seguir']):
+        return 'redes_sociales'
+    
     # Confirmación positiva
     if any(word in mensaje for word in ['si', 'sí', 'claro', 'ok', 'dale', 'quiero', 'deseo', 'me interesa', 'afirmativo', 'si please', 'aceptar']):
         return 'confirmacion_si'
@@ -187,22 +191,22 @@ Nuestros servicios principales:
         elif intencion == 'consulta_servicios':
             response_text = """Excelente! Te cuento sobre nuestros servicios de energías renovables:
 
-☀️ **Solar Fotovoltaica Aislada (Off-Grid)**
+☀️ Solar Fotovoltaica Aislada (Off-Grid)
 Sistemas autónomos sin conexión a red, ideales para zonas rurales.
 
-⚡ **Solar Fotovoltaica Conectada a Red (On-Grid)**
+⚡ Solar Fotovoltaica Conectada a Red (On-Grid)
 Genera tu propia energía y reduce tu factura eléctrica.
 
-💧 **Sistemas de Bombeo Solar**
+💧 Sistemas de Bombeo Solar
 Soluciones para riego y bombeo de agua optimizadas.
 
-💡 **Sistemas de Iluminación Solar**
+💡 Sistemas de Iluminación Solar
 Iluminación LED para espacios públicos y privados.
 
-📊 **Eficiencia Energética**
+📊 Eficiencia Energética
 Auditorías y optimización de consumo.
 
-🏭 **Industria 4.0**
+🏭 Industria 4.0
 Automatización y IoT para procesos industriales.
 
 ¿Sobre cuál servicio te gustaría conocer más?"""
@@ -259,15 +263,15 @@ He preparado un mensaje para ti sobre: **{servicio['nombre']}**
 
 {empresa.get('descripcion', 'Soluciones tecnológicas para ciudades inteligentes y sostenibles.')}
 
-**Ubicación:** {empresa.get('ubicacion_principal', {}).get('nombre', '')}, Manta, Ecuador
+Ubicación: {empresa.get('ubicacion_principal', {}).get('nombre', '')}, Manta, Ecuador
 
-**Nuestra Misión:**
+Nuestra Misión:
 {empresa.get('mision', '')}
 
-**Nuestra Visión:**
+Nuestra Visión:
 {empresa.get('vision', '')}
 
-**Nuestro Posicionamiento:**
+Nuestro Posicionamiento:
 Somos tu {empresa.get('posicionamiento', 'aliado estratégico')} en la transición energética.
 
 ¿Te gustaría conocer nuestros servicios específicos o projectos de referencia?"""
@@ -279,15 +283,15 @@ Somos tu {empresa.get('posicionamiento', 'aliado estratégico')} en la transici�
 
 Contamos con una cartera de proyectos exitosos en tres sectores:
 
-🏠 **Residencial:**
+🏠 Residencial:
 • Urbanización Barú (Manta): Sistema On-Grid 5 kW
 • Ciudad del Mar (Manta): Sistema On-Grid 10 kW + Sistema Híbrido 5 kW
 
-🏢 **Comercial:**
+🏢 Comercial:
 • Motel Intimus (Jipijapa): Sistema solar 22 kW (40 paneles)
 • Multiservicios Julio (Manta): Sistema 15 kW
 
-🏛️ **Público y Comunitario:**
+🏛️ Público y Comunitario:
 • EPAM Manta: Infraestructura fotovoltaica en 8 puntos estratégicos
 • Comuna Liguiqui: Sistema de Bombeo Solar (abastece a 700m) + Sistema Off-Grid para videovigilancia
 
@@ -295,38 +299,38 @@ Estos proyectos demuestran nuestra experiencia y confiabilidad. ¿Te gustaría s
             sesion['estado'] = 'mostrando_proyectos'
         
         elif intencion == 'consulta_certificaciones':
-            response_text = """✅ **Nuestras Certificaciones y Estándares**
+            response_text = """✅ Nuestras Certificaciones y Estándares
 
-**ISO 50001 - Gestión de la Energía**
+ISO 50001 - Gestión de la Energía
 No solo la cumplimos, sino que ofrecemos:
 • Consultoría e implementación de ISO 50001
 • Auditorías energéticas completas
 • Certificación para empresas que busquen acreditar su eficiencia energética
 
-**Normativa ARCONEL**
+Normativa ARCONEL
 Cumplimiento de regulaciones locales ecuatorianas para sistemas conectados a red (On-Grid).
 
-**Estándares de Calidad**
+Estándares de Calidad
 Trabajamos con equipos de primera calidad y garantía completa, probados en múltiples proyectos.
 
 ¿Deseas información sobre cómo podríamos ayudarte con eficiencia energética o certificaciones?"""
             sesion['estado'] = 'presentacion'
         
         elif intencion == 'consulta_marcas':
-            response_text = f"""🔧 **Marcas y Tecnología Utilizada**
+            response_text = f"""🔧 Marcas y Tecnología Utilizada
 
-Trabajamos con **marcas líderes del mercado** probadas en nuestros proyectos:
-✓ **JinkoSolar** - Paneles de alta eficiencia
-✓ **SIEMENS** - Sistemas de automatización
-✓ **INVT** - Variadores de frecuencia
-✓ **GROOWATT** - Inversores solares
+Trabajamos con marcas LIDERES del mercado probadas en nuestros proyectos:
+✓ JinkoSolar - Paneles de alta eficiencia
+✓ SIEMENS - Sistemas de automatización
+✓ INVT - Variadores de frecuencia
+✓ GROOWATT - Inversores solares
 
-**Tecnología:**
-☀️ **Paneles Monocristalinos** para máxima eficiencia
-⚡ **Inversores** On-Grid, Off-Grid e Híbridos
-🔋 **Almacenamiento:** Baterías de Litio (larga duración) y GEL (aplicaciones rurales)
-🏭 **Sistemas PLC y SCADA** para control industrial
-📊 **IoT:** Estación Sparks-AQ1 para monitoreo de aire y parámetros ambientales
+Tecnología:
+☀️ Paneles Monocristalinos para máxima eficiencia
+⚡ Inversores On-Grid, Off-Grid e Híbridos
+🔋 Almacenamiento: Baterías de Litio (larga duración) y GEL (aplicaciones rurales)
+🏭 Sistemas PLC y SCADA para control industrial
+📊 IoT: Estación Sparks-AQ1 para monitoreo de aire y parámetros ambientales
 
 Para detalles técnicos específicos de tu proyecto, consulta directamente con nuestros ingenieros vía WhatsApp.
 
@@ -334,7 +338,7 @@ Para detalles técnicos específicos de tu proyecto, consulta directamente con n
             sesion['estado'] = 'mostrando_servicios'
         
         elif intencion == 'precio':
-            response_text = """💰 **Sobre Precios y Cotización**
+            response_text = """💰 Sobre Precios y Cotización
 
 Los costos varían según:
 • Tipo de instalación (On-Grid, Off-Grid, Híbrida)
@@ -343,7 +347,7 @@ Los costos varían según:
 • Componentes seleccionados (paneles, inversores, baterías)
 • Ubicación geográfica
 
-**Nuestro Proceso:**
+Nuestro Proceso:
 1️⃣ Estudio energético integral (SIN COSTO)
 2️⃣ Análisis de tu patrón de consumo
 3️⃣ Proyección económica del ahorro
@@ -363,26 +367,52 @@ Los costos varían según:
             if numero_whatsapp_principal:
                 whatsapp_url = f"https://wa.me/{numero_whatsapp_principal}?text={mensaje_whatsapp.replace(' ', '%20')}"
             
-            response_text = f"""📞 **Nuestros Canales de Contacto**
+            response_text = f"""📞 Nuestros Canales de Contacto
 
-**WhatsApp (Directo):**
+WhatsApp (Directo):
 {' | '.join(whatsapp_numeros)}
 
-🔗 **Abrir WhatsApp Directo:**
+🔗 Abrir WhatsApp Directo:
 Toca el botón de abajo para chatear con nosotros en WhatsApp
 
-**Correo Electrónico:**
+Correo Electrónico:
 {contacto.get('correo', 'info@sparksenergy.io')}
 
-**Horario de Atención:**
+Horario de Atención:
 {contacto.get('horario', 'Lunes a Sábado, 08:00 AM – 08:00 PM')}
 
-**Ubicación:**
+Ubicación:
 Edificio Manta Business Center, Torre B, Piso 3, Oficina 301
 Av. Malecón (Frente al Mall del Pacífico), Manta, Manabí, Ecuador
 
 ¿Prefieres abrir WhatsApp ahora para una consulta rápida?"""
             sesion['estado'] = 'mostrando_contacto'
+        
+        elif intencion == 'redes_sociales':
+            contacto = obtener_contacto_empresa()
+            redes = contacto.get('redes_sociales', {})
+            
+            response_text = f"""📱 **Síguenos en Nuestras Redes Sociales**
+
+Mantente actualizado con nuestros últimos proyectos, tips de energía renovable y novedades:
+
+📘 Facebook:
+{redes.get('facebook', '')}
+
+📸 Instagram:
+{redes.get('instagram', '')}
+
+🎥 YouTube:
+{redes.get('youtube', '')}
+
+💼 LinkedIn:
+{redes.get('linkedin', '')}
+
+🐦 Twitter/X:
+{redes.get('twitter', '')}
+
+¡No te pierdas nuestro contenido exclusivo! 🌱⚡"""
+            sesion['estado'] = 'mostrando_redes_sociales'
         
         else:
             response_text = """Estoy aquí para ayudarte con información sobre nuestros servicios de energías renovables.
